@@ -1,0 +1,11 @@
+<p>[<a href="../../">home</a>] [<a href="../search/">search</a>] [<a href="../submit/">post a listing</a>]</p>
+{% if listing %}
+<h1>{{listing.title}}</h1>
+<h3>{{listing.subject}} {{listing.course_number}}</h3>
+<h4>Contact: {{listing.email}}</h4>
+<h5>{{listing.price}}</h5>
+<p>{{listing.body}}</p>
+{% else %}
+<p>Listing doesn't exist.</p>
+{% endif %}
+<p>[<a href="../../">home</a>] [<a href="../search/">search</a>] [<a href="../submit/">post a listing</a>]</p>

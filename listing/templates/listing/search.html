@@ -1,0 +1,12 @@
+<p>[<a href="../..">home</a>] [<a href=".">search</a>] [<a href="../submit/">post a listing</a>]</p>
+<form action="/search_results/" method="post">
+{% csrf_token %}
+
+<p>Subject Code (eg AMST or MATH): {{ form.subject_code }}</p>
+<p>Class Number (eg 101 or 201): {{ form.class_number }}</p>
+<br />
+<input type="submit" value="Submit" />
+</form>
+<p>Make sure these are exact as the search does not accept partial results.</p>
+<br />
+<p>[<a href="../..">home</a>] [<a href=".">search</a>] [<a href="../submit/">post a listing</a>]</p>

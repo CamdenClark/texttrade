@@ -1,0 +1,6 @@
+<p>[<a href="..">home</a>] [<a href="../listing/search">search</a>] [<a href="../listing/submit/">post a listing</a>]</p>
+<ul>
+	{% for result in listings %}
+	<li><a href="../listing/{{result.id}}">{{ result.title }}</a> - {{ result.price }}</li>		{% endfor %}
+</ul>
+<p>[<a href="..">home</a>] [<a href="../listing/search">search</a>] [<a href="../listing/submit/">post a listing</a>]</p>
