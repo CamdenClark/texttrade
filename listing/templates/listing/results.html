@@ -1,6 +1,6 @@
-<p>[<a href="..">home</a>] [<a href="../listing/search">search</a>] [<a href="../listing/submit/">post a listing</a>]</p>
+<p>[<a href="../">home</a>] [<a href="../listing/search/">search</a>] [<a href="../listing/submit/">post a listing</a>]</p>
 <ul>
 	{% for result in listings %}
-	<li><a href="../listing/{{result.id}}">{{ result.title }}</a> - {{ result.price }}</li>		{% endfor %}
+	<li><a href="../listing/{{result.id}}/">{{ result.title }}</a> - {{ result.price }} - {{ result.pub_date.month }}/{{ result.pub_date.day }}/{{result.pub_date.year}}</li>		{% endfor %}
 </ul>
-<p>[<a href="..">home</a>] [<a href="../listing/search">search</a>] [<a href="../listing/submit/">post a listing</a>]</p>
+<p>[<a href="..">home</a>] [<a href="../listing/search/">search</a>] [<a href="../listing/submit/">post a listing</a>]</p>

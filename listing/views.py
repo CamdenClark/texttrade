@@ -23,11 +23,11 @@ def get_search(request):
 def get_submit(request):
 	if request.method == 'POST':
 		form = SubmitForm(request.POST)
-		if form.is_valid():
-			return HttpResponse("Thanks bro!")
+		if not form.is_valid():
+			invalid=True
 	else:
 		form = SubmitForm()
-	return render(request, 'listing/submit.html', {'form': form})
+	return render(request, 'listing/submit.html', {'form': form,'invalid': invalid})
 
 def fetch_results(request):
 	if request.method == 'POST':

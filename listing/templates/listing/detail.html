@@ -4,7 +4,9 @@
 <h3>{{listing.subject}} {{listing.course_number}}</h3>
 <h4>Contact: {{listing.email}}</h4>
 <h5>{{listing.price}}</h5>
+<p>Posted: {{listing.pub_date.month}}/{{listing.pub_date.day}}/{{listing.pub_date.year}}</p>
 <p>{{listing.body}}</p>
+
 {% else %}
 <p>Listing doesn't exist.</p>
 {% endif %}
